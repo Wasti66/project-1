@@ -1,0 +1,121 @@
+html{
+	scroll-behavior:smooth;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+body{
+	
+	font-family: 'Poppins', sans-serif;
+}
+section{
+	padding-top:75px;
+	padding-bottom:75px;
+}
+/*-- ==== nav === --*/
+.sticky-top ul li a{
+	color:black!important;
+}
+.sticky-top ul li a.active{
+	color:green!important;
+}
+.sticky-top h4{
+	color:black!important;
+}
+#main-nav ul li a.active{
+	border-bottom:2px solid black!important;
+}
+/* -- ===== home google font ======= -- */
+.home_h1{
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+/*-- ===== about me ==== --*/
+#about .btn:hover{
+	background-color:white!important;
+	color:black!important;
+	border:1px solid black;
+}
+#about .contact_btn{
+	border:1px solid black;
+}
+#about .contact_btn:hover{
+	background-color:black!important;
+	color:white!important;
+}
+.about_me:after{
+	content: '';
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: 0px;
+	background-image: url(../images/dots.png);
+    bottom: -30px;
+	background-repeat: repeat;
+    z-index: -1;
+}
+/*-- ==== service part ==== --*/
+#main-slider .carousel-indicators li.active {
+	background-color: #869791!important;
+
+}
+#main-slider .carousel-indicators li {
+	background-color: #8697916e!important;
+	opacity: 1!important;
+}
+
+/*-- ==== our blog === --*/
+.owl-nav{
+	color:black;
+	display:inline-block;
+	font-size:2rem;
+	margin-top-30px;
+	text-align:center;
+	transition:all 0.5s;
+}
+.owl-prev, .owl-next{
+	position:absolute;
+}
+.owl-prev{
+	left:-16px;
+	top:43%;
+}
+.owl-next{
+	right:-16px;
+	top:43%;
+}
+/*---=====media device-----======*/
+#contact .btn:hover{
+	background-color:white!important;
+	color:black!important;
+	border:1px solid black;
+}
+/*---=====media device-----======*/
+@media (max-width: 991px){
+	.offcanvas-md{
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		height:100vh;
+		width:300px;
+		background-color:#2998a6;
+		padding:1.5rem;
+		display:block!important;
+		transform:translateX(-100%);
+		transition:all 1s;
+	}
+	.offcanvas-md.show{
+		transform:translateX(0%);
+	}
+	.offcanvas-md.offcanvas-right{
+		left:100%;
+		transform:translateX(100%);
+	}
+	.offcanvas-md.offcanvas-right.show{
+		transform:translateX(-100%);
+	}
+
+}
